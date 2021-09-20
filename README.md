@@ -1,6 +1,6 @@
 # paranormal_playlist
 This is a recommender system that lets you enter a paranormal romance book and get back a list of 20 hair metal songs as a soundtrack
-Cancel changes
+
 About:
 This was my final project at allWomen Tech DS Bootcamp (5/2021-7/2021). The video presentation can be seen here: https://youtu.be/Ke0LeeY-LK8?t=1367 and the presentations without narration can be seen here: https://sway.office.com/W0qWgUcxXmIMwpbV?ref=Link
 
