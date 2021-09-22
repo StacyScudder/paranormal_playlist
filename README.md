@@ -1,7 +1,7 @@
 # paranormal_playlist
 This is a recommender system that lets you enter a paranormal romance book and get back a list of 20 hair metal songs as a soundtrack
 
-<img src="https://github.com/StacyScudder/paranormal_playlist/blob/main/Slide2.JPG" width=600>
+<img src="https://github.com/StacyScudder/paranormal_playlist/blob/main/Slide2.JPG" width=600 align = center alt="book cover with playlist for the book">
 
 About:<br>
 This was my final project at allWomen Tech DS Bootcamp (5/2021-7/2021).<br>
