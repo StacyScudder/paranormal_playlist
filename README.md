@@ -5,7 +5,7 @@ This is a recommender system that lets you enter a paranormal romance book and g
 
 
 About:<br>
-This was my final project at allWomen Tech DS Bootcamp (5/2021-7/2021).<br>
+This was my final project at allWomen Tech data science bootcamp (5/2021-7/2021).<br>
 My video presentation can be seen here: https://youtu.be/Ke0LeeY-LK8?t=1367 <br>
 My presentation without narration can be seen here: https://sway.office.com/W0qWgUcxXmIMwpbV?ref=Link
 
