@@ -4,7 +4,7 @@ This is a recommender system that lets you enter a paranormal romance book and g
 ![book cover and playlist for book](https://github.com/StacyScudder/paranormal_playlist/blob/main/Slide2.JPG "Sookie Stackhouse book and playlist")
 
 About:<br>
-This was my final project at allWomen Tech DS Bootcamp (5/2021-7/2021). <br>
+This was my final project at allWomen Tech DS Bootcamp (5/2021-7/2021).
 [My video presentation](https://youtu.be/Ke0LeeY-LK8?t=1367) 
 [My Sway presentation - no narration](https://sway.office.com/W0qWgUcxXmIMwpbV?ref=Link)
 
