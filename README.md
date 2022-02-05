@@ -9,17 +9,17 @@ My presentation without narration can be seen here: https://sway.office.com/W0qW
 
 ![book cover with playlist for book](img/Slide2.png)
 
-The book data:  
+## The book data:  
 I knew I was going to have to scrape the song lyrics, so I thought finding a dataset of books with genres and descriptions would make the project a little easier. Finding the dataset wasn't as easy as I thought it might be, but I managed to find a set I could use on [Kaggle](https://www.kaggle.com/meetnaren/goodreads-best-books). To use this dataset with the notebooks files, follow the instructions inside the get_book_df notebook.
 
-The lyrics data:  
+## The lyrics data:  
 This dataset was going to be more difficult to find. Because I decided to narrow the genre down to only hair bands (bands like Cinderella, Motley Crue, etc), I didn't think there'd be any datasets already put together. Interestingly enough, I managed to find [a repo with lyrics scraped from AZLyrics](https://github.com/SoumitraAgarwal/Webscraping-Text-Data) that included several of the bands I was interested in. I didn't need all the files, so if you want to use the same ones I did, download the files from my repo.  
 
 For the lyrics that weren't in the dataset I found, I scraped the song lyrics myself from [Genius Lyrics](http://www.genius.com). I used the working_webscraping.ipynb (same folder) to go through each band individually and save their song lyrics. After reading the json file saved from the webscrape, I extracted the three columns I was interested in for each band, concantenated all the smaller files and ended up with one that I could use.
 
 Finally, I took the found lyrics and scraped lyrics and combined them into one file to use with the book dataset.
 
-To Use:  
+## To Use:  
 Start in the books folder to get the initial csv for books.  
 After that, start with found lyrics folder.  
 In the scraped lyrics folder, the json files that are scraped aren't included but you can download them at [this link](https://github.com/SoumitraAgarwal/Webscraping-Text-Data/tree/master/Song%20Lyrics/Data/Lyrics), which is also linked above. You can also skip this and go directly to the combined_lyrics notebook. Both the found and scraped datasets I cleaned are uploaded to Github, so you can skip the work and download them directly.  
@@ -29,7 +29,7 @@ I'd meant to be able to set up a Spotify playlist directly from the book playlis
 
 ![bar chart showing most popular monster](img/pop_monstersm.png)
 
-Next Steps:
+## Next Steps:
 + Scrape track numbers from Spotify - either use fuzzy match to work with csv I have or scrape track info and combine csv files
 + Create an app or webapp
 + Allow users to sign into their own Spotify account to create their own playlists
