@@ -13,7 +13,11 @@ The book data:
 I knew I was going to have to scrape the song lyrics, so I thought finding a dataset of books with genres and descriptions would make the project a little easier. Finding the dataset wasn't as easy as I thought it might be, but I managed to find a set I could use on [Kaggle](https://www.kaggle.com/meetnaren/goodreads-best-books). To use this dataset with the notebooks files, follow the instructions inside the get_book_df notebook.
 
 The lyrics data:  
-This dataset was going to be more difficult to find. Because I decided to narrow the genre down to only hair bands (bands like Cinderella, Motley Crue, etc), I didn't think there'd be any datasets already put together. Interestingly enough, I managed to find [a repo with lyrics scraped from AZLyrics](https://github.com/SoumitraAgarwal/Webscraping-Text-Data) that included several of the bands I was interested in. I didn't need all the files, so if you want to use the same ones I did, download the files from my repo. 
+This dataset was going to be more difficult to find. Because I decided to narrow the genre down to only hair bands (bands like Cinderella, Motley Crue, etc), I didn't think there'd be any datasets already put together. Interestingly enough, I managed to find [a repo with lyrics scraped from AZLyrics](https://github.com/SoumitraAgarwal/Webscraping-Text-Data) that included several of the bands I was interested in. I didn't need all the files, so if you want to use the same ones I did, download the files from my repo.  
+
+For the lyrics that weren't in the dataset I found, I scraped the song lyrics myself from [Genius Lyrics](http://www.genius.com). I used the working_webscraping.ipynb (same folder) to go through each band individually and save their song lyrics. After reading the json file saved from the webscrape, I extracted the three columns I was interested in for each band, concantenated all the smaller files and ended up with one that I could use.
+
+Finally, I took the found lyrics and scraped lyrics and combined them into one file to use with the book dataset.
 
 To Use:  
 Start in the books folder to get the initial csv for books.  
