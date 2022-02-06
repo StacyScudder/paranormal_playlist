@@ -19,7 +19,7 @@ For the lyrics that weren't in the dataset I found, I scraped the song lyrics my
 
 Finally, I took the found lyrics and scraped lyrics and combined them into one file to use with the book dataset.
 
-## To Use My Notebooks:  
+## To use the notebooks:  
 Start in the books folder to get the initial csv for books.  
 After that, start with found lyrics folder.  
 In the scraped lyrics folder, the json files that are scraped aren't included but you can download them at [this link](https://github.com/SoumitraAgarwal/Webscraping-Text-Data/tree/master/Song%20Lyrics/Data/Lyrics), which is also linked above. You can also skip this and go directly to the combined_lyrics notebook. Both the found and scraped datasets I cleaned are uploaded to Github, so you can skip the work and download them directly.  
