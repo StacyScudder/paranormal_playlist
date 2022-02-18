@@ -30,6 +30,8 @@ Once both datasets were cleaned and ready to use, I added a column for formats w
 
 ![bar chart showing most popular monster](/img/pop_monstersm.png)
 
+<img src = "img/pop_monstersm.png"  alt = "bar chart showing most popular monster" width = "200">
+
 **Next Steps**
 + Scrape track numbers from Spotify - either use fuzzy match to work with csv I have or scrape track info and combine csv files
 + Create a webapp so people can use this themselves
