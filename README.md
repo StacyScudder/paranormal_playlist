@@ -1,36 +1,37 @@
-# paranormal_playlist
-This is a recommender system that lets you enter a paranormal romance book and get back a list of 20 hair metal songs as a soundtrack.
+**About**  
+This was my final project at allWomen Tech data science bootcamp (5/2021-7/2021)
 
-This was my final project at [allWomen Tech](https://www.allwomen.tech/) data science bootcamp (5/2021-7/2021).<br>
-My video presentation can be seen here: https://youtu.be/Ke0LeeY-LK8?t=1367 <br>
-My presentation without narration can be seen here: https://sway.office.com/W0qWgUcxXmIMwpbV?ref=Link  
-  
-  
+To view the presentation video for my project, click the image below.
 
-![book cover with playlist for book](img/Slide2.png)
+<a href="https://youtu.be/Ke0LeeY-LK8?t=1367"><img src="https://i3.ytimg.com/vi/Ke0LeeY-LK8/0.jpg" alt="allWomen Demo Days Presentation" width="200" target = _blank></a>
 
-## The book data:  
-I knew I was going to have to scrape the song lyrics, so I thought finding a dataset of books with genres and descriptions would make the project a little easier. Finding the dataset wasn't as easy as I thought it might be, but I managed to find a set I could use on [Kaggle](https://www.kaggle.com/meetnaren/goodreads-best-books). To use this dataset with the notebooks files, follow the instructions inside the get_book_df notebook.
+To view the presentation without the video, you can view the Sway by clicking the image below.
 
-## The lyrics data:  
-This dataset was going to be more difficult to find. Because I decided to narrow the genre down to only hair bands (bands like Cinderella, Motley Crue, etc), I didn't think there'd be any datasets already put together. Interestingly enough, I managed to find [a repo with lyrics scraped from AZLyrics](https://github.com/SoumitraAgarwal/Webscraping-Text-Data) that included several of the bands I was interested in. I didn't need all the files, so if you want to use the same ones I did, download the files from my repo.  
+<a href = "https://sway.office.com/W0qWgUcxXmIMwpbV?ref=Link&loc=mysways"><img src = "img/reading.png"  alt = "Sway Presentation of Paranormal Playlist" width = "200" target = _blank></a>
 
-For the lyrics that weren't in the dataset I found, I scraped the song lyrics myself from [Genius Lyrics](http://www.genius.com). I used the working_webscraping.ipynb (same folder) to go through each band individually and save their song lyrics. After reading the json file saved from the webscrape, I extracted the three columns I was interested in for each band, concantenated all the smaller files and ended up with one that I could use.
+This is a recommender system that lets you enter a paranormal romance book and get back a list of 20 hair metal songs as a soundtrack. I looked around for an app or website that would let a reader create a playlist based on a book, but there weren't any. Every recommender I found stayed within the same mediums: book to book, music to music, etc. So I thought I'd have some fun and create my own. 
 
-Finally, I took the found lyrics and scraped lyrics and combined them into one file to use with the book dataset.
+**Book Data**  
+Since this was my first project, I wanted to keep it as simple as I could, while still stretching myself to learn new things. I found several datasets of books, but they either didn't have the genre or didn't have the book blurb. I finally found a large dataset of books (~50,000) that had both the genre and blurb, but it wasn't as easy to clean as some of the other book data, and it was extremely large. I pulled out all the paranormal romance books and ended up with a much smaller dataset (~4,500). The data was much messier than I'd dealt with before, and it took several days to get it cleaned to the point where the odd non-English or missing values wouldn't cause problems. 
 
-## To use the notebooks:  
-Start in the books folder to get the initial csv for books.  
-After that, start with found lyrics folder.  
-In the scraped lyrics folder, the json files that are scraped aren't included but you can download them at [this link](https://github.com/SoumitraAgarwal/Webscraping-Text-Data/tree/master/Song%20Lyrics/Data/Lyrics), which is also linked above. You can also skip this and go directly to the combined_lyrics notebook. Both the found and scraped datasets I cleaned are uploaded to Github, so you can skip the work and download them directly.  
-Once the combined lyrics notebook has finished, go to the main folder and work in the book_sountrack notebook to combine everything into one dataframe, do some basic EDA and visualizations, and finally get your song recommendations!
+**Lyrics Data**  
+Because my final book dataset was small, I thought I should pair it with a small set of music, too. I wanted a playlist of 10 to 20 songs, so I thought the music dataset should have between 2,000 and 4,000 songs. To do that, I decided on a genre near and dear to my heart. Being a child of the 80s, I grew up listening to hair metal and thought it would make an interesting counterpoint to my PNR romance books. I had a difficult time finding a dataset that would work, so I decided to scrape the songs from [Genius](https://genius.com/) and [AZ lyrics](https://www.azlyrics.com/). I put together a list of the some hair metal bands and went to work creating a dataset. When I'd finished my scraping, I found that I didn't have enough songse so I started searching again for datasets. I luckily found one with lyrics for several genres of music, including some hair metal. I pulled out the data I could use from that dataset and joined it with the dataset I'd scraped (~5,000). There were some instrumental songs in the dataset - I have no idea how! - so I set to work cleaning. Cleaning this data didn't take nearly as long as cleaning the books, thank goodness! 
 
-I'd meant to be able to set up a Spotify playlist directly from the book playlist created in the file. I didn't know that I'd need to Spotify track ids and other things to work with the Spotify API. Now I'm going back and getting all the track ids and will update the book_soundtrack and other files to automatically set up a playlist for anyone who puts a book title in. I'd like to get rid of the book database and allow a user to put in any book title, not just for romance books, and then choose the genres of music for their playlist. This would mean I could get rid of my book dataset and have the program search Amazon or Goodreads for the title and author and scrape the description. I can't think of how I could get rid of the lyric dataset. To expand it to every musical genre may need more storage than I can deal with on a single computer. I guess I'll have to start small and see how far I can go.
+**Reccomender System**  
+Once both datasets were cleaned and ready to use, I added a column for formats with 0 for books and 1 for music and merged them. I then started working on putting together my model. I went with TF-IDF and cosine similarity to compare the content of the book descriptions and song lyrics. 
 
-![bar chart showing most popular monster](img/pop_monstersm.png)
+![book cover with playlist for book](/img/Slide2.png)
 
-## Next Steps:
+**To Use**
+- Start in the books folder to get the initial csv for books.
+- After that, start with either scraped or found lyrics folder. 
+- In the scraped lyrics folder, the json files that are scraped aren't included, but you can skip that folder and go directly to the combined lyrics folder since I've included the resultant csv file of scraped lyrics. 
+- Once the combined lyrics notebook has finished, go to the main folder and work in the book_sountrack notebook to combine everything into one dataframe and finally get your song recommendations!
+
+![bar chart showing most popular monster](/img/pop_monster.png)
+
+**Next Steps**
 + Scrape track numbers from Spotify - either use fuzzy match to work with csv I have or scrape track info and combine csv files
-+ Create an app or webapp
++ Create a webapp so people can use this themselves
 + Allow users to sign into their own Spotify account to create their own playlists
-+ Set up automatic scraping of book information
++ Set up automatic scraping of books
