@@ -28,7 +28,7 @@ Once both datasets were cleaned and ready to use, I added a column for formats w
 - In the scraped lyrics folder, the json files that are scraped aren't included, but you can skip that folder and go directly to the combined lyrics folder since I've included the resultant csv file of scraped lyrics. 
 - Once the combined lyrics notebook has finished, go to the main folder and work in the book_sountrack notebook to combine everything into one dataframe and finally get your song recommendations!
 
-![bar chart showing most popular monster](/img/pop_monster.png)
+![bar chart showing most popular monster](/img/pop_monstersm.png)
 
 **Next Steps**
 + Scrape track numbers from Spotify - either use fuzzy match to work with csv I have or scrape track info and combine csv files
