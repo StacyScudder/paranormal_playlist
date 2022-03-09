@@ -1,3 +1,4 @@
+![book cover with playlist for book](/img/heart_hair.jpg)
 **About**  
 This was my final project at allWomen Tech data science bootcamp (5/2021-7/2021)
 
