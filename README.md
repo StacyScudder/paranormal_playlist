@@ -1,4 +1,4 @@
-<img src = "img/heart_hair.png"  alt = "PNR book covers on heart with background of hair metal band logos" width = "600">
+<img src = "img/heart_hair.png"  alt = "PNR book covers on heart with background of hair metal band logos" width = "400">
 
 **About**  
 This was my final project at allWomen Tech data science bootcamp (5/2021-7/2021)
@@ -30,7 +30,7 @@ Once both datasets were cleaned and ready to use, I added a column for formats w
 - In the scraped lyrics folder, the json files that are scraped aren't included, but you can skip that folder and go directly to the combined lyrics folder since I've included the resultant csv file of scraped lyrics. 
 - Once the combined lyrics notebook has finished, go to the main folder and work in the book_sountrack notebook to combine everything into one dataframe and finally get your song recommendations!
 
-<div align = "center"><img src = "img/pop_monstersm.png"  alt = "bar chart showing most popular monsters are vampires" width = "200"></div>
+<div align = "center"><img src = "img/pop_monstersm.png"  alt = "bar chart showing most popular monsters are vampires" width = "400"></div>
 
 **Next Steps**
 + Scrape track numbers from Spotify - either use fuzzy match to work with csv I have or scrape track info and combine csv files
