@@ -37,3 +37,6 @@ Once both datasets were cleaned and ready to use, I added a column for formats w
 + Create a webapp so people can use this themselves
 + Allow users to sign into their own Spotify account to create their own playlists
 + Set up automatic scraping of books
++ Change directions - give some songs from a playlist and suggest a book (thanks Anu!)
++ better playlist suggestions for moods (thanks Neslihan)
++ suggest book based on ambiance of memes, pictures, general feelings etc. (thanks Kat and Neslihan!)
