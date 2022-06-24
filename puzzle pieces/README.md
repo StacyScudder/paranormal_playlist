@@ -2,6 +2,8 @@
 
 # Get a book ISBN and description
 
+One piece of my [book playlist](https://github.com/StacyScudder/paranormal_playlist) puzzle!
+
 ![Google Books logo](Google-book-logo.png)
 
 The booksearch file takes the title of any book (not just paranormal romance...more's the pity) and uses Google Books API to find the ISBN and description for the book given Then the regex library cleans up the description text to get it ready for TF-IDF (not implemented in this file) when the piece gets put into the rest of the puzzle.
